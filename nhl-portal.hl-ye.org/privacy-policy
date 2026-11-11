@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="سياسة الخصوصية الرسمية لتطبيق منحتي (Menhaty App) للأجهزة الذكية iOS و Android - متوافقة مع متطلبات متجر تطبيقات أبل App Store ومتجر جوجل بلاي Google Play">
+    <meta name="author" content="فريق تطبيق منحتي | Menhaty Team">
+    <meta name="robots" content="index, follow">
+    <title>سياسة الخصوصية | تطبيق منحتي - Menhaty Privacy Policy (iOS & Android)</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #9F0712;
+            --primary-dark: #7a050e;
+            --primary-light: #fef2f2;
+            --secondary: #D94A52;
+            --accent-blue: #2E2A63;
+            --accent-blue-light: #eef0f8;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --bg-page: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --border-highlight: #fca5a5;
+            --success: #059669;
+            --warning: #d97706;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.08), 0 2px 4px -1px rgba(0,0,0,0.04);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -2px rgba(0,0,0,0.03);
+            --radius-md: 12px;
+            --radius-lg: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Cairo', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+
+        /* LTR Font Override for English */
+        html[dir="ltr"] body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        /* Top Header */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent-blue) 100%);
+            color: #ffffff;
+            padding: 45px 20px 40px;
+            text-align: center;
+            position: relative;
+            box-shadow: var(--shadow-md);
+        }
+
+        .header-container {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .lang-switch-wrapper {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+
+        .lang-btn {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            color: #ffffff;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            backdrop-filter: blur(4px);
+        }
+
+        .lang-btn:hover {
+            background-color: #ffffff;
+            color: var(--primary);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-1px);
+        }
+
+        .app-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            letter-spacing: 0.3px;
+        }
+
+        .app-icon {
+            width: 58px;
+            height: 58px;
+            background: #ffffff;
+            border-radius: 14px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 14px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .app-icon svg {
+            width: 34px;
+            height: 34px;
+            fill: var(--primary);
+        }
+
+        h1.title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+
+        p.subtitle {
+            font-size: 1.05rem;
+            opacity: 0.92;
+            max-width: 650px;
+            margin: 0 auto 15px;
+        }
+
+        .meta-bar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.85rem;
+            opacity: 0.85;
+            margin-top: 10px;
+        }
+
+        .meta-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 900px;
+            margin: -25px auto 50px;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        /* Quick Info Callout */
+        .callout-box {
+            background: #ffffff;
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            box-shadow: var(--shadow-md);
+            border-right: 5px solid var(--primary);
+            margin-bottom: 25px;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        html[dir="ltr"] .callout-box {
+            border-right: none;
+            border-left: 5px solid var(--primary);
+        }
+
+        .callout-icon {
+            flex-shrink: 0;
+            width: 44px;
+            height: 44px;
+            background: var(--primary-light);
+            color: var(--primary);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .callout-content h3 {
+            font-size: 1.15rem;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .callout-content p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* Table of Contents */
+        .toc-card {
+            background: #ffffff;
+            border-radius: var(--radius-lg);
+            padding: 24px 28px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border);
+            margin-bottom: 30px;
+        }
+
+        .toc-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--accent-blue);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .toc-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 10px 20px;
+            list-style: none;
+        }
+
+        .toc-list a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.92rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.2s ease, transform 0.2s ease;
+        }
+
+        .toc-list a:hover {
+            color: var(--primary);
+            transform: translateX(-3px);
+        }
+
+        html[dir="ltr"] .toc-list a:hover {
+            transform: translateX(3px);
+        }
+
+        .toc-number {
+            background: var(--bg-page);
+            border: 1px solid var(--border);
+            color: var(--accent-blue);
+            border-radius: 50%;
+            width: 22px;
+            height: 22px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        /* Content Sections */
+        .policy-card {
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border);
+            transition: box-shadow 0.2s ease;
+        }
+
+        .policy-card:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 20px;
+            padding-bottom: 14px;
+            border-bottom: 2px solid #f1f5f9;
+        }
+
+        .section-icon {
+            width: 42px;
+            height: 42px;
+            background: var(--primary-light);
+            color: var(--primary);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .section-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--accent-blue);
+        }
+
+        .section-body {
+            font-size: 1rem;
+            color: var(--text-muted);
+            line-height: 1.85;
+        }
+
+        .section-body p {
+            margin-bottom: 14px;
+        }
+
+        .section-body p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Lists */
+        .policy-list {
+            list-style: none;
+            margin: 14px 0;
+            padding-right: 10px;
+        }
+
+        html[dir="ltr"] .policy-list {
+            padding-right: 0;
+            padding-left: 10px;
+        }
+
+        .policy-list li {
+            position: relative;
+            padding-right: 24px;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+
+        html[dir="ltr"] .policy-list li {
+            padding-right: 0;
+            padding-left: 24px;
+        }
+
+        .policy-list li::before {
+            content: "•";
+            color: var(--primary);
+            font-size: 1.5rem;
+            position: absolute;
+            right: 0;
+            top: -5px;
+        }
+
+        html[dir="ltr"] .policy-list li::before {
+            right: auto;
+            left: 0;
+        }
+
+        /* Apple Specific Highlight Box (Account Deletion & Permissions) */
+        .highlight-box {
+            background: #fff8f8;
+            border: 1px solid var(--border-highlight);
+            border-radius: var(--radius-md);
+            padding: 20px 24px;
+            margin: 20px 0 10px;
+        }
+
+        .highlight-box.blue {
+            background: var(--accent-blue-light);
+            border-color: #cbd5e1;
+        }
+
+        .highlight-title {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.05rem;
+        }
+
+        .highlight-box.blue .highlight-title {
+            color: var(--accent-blue);
+        }
+
+        /* Permission Badges */
+        .perm-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .perm-item {
+            background: #f8fafc;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .perm-name {
+            font-weight: 700;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.98rem;
+        }
+
+        .perm-desc {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* Contact Box */
+        .contact-card {
+            background: linear-gradient(135deg, #ffffff 0%, var(--bg-page) 100%);
+            border: 2px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 30px;
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        .contact-card h3 {
+            color: var(--accent-blue);
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .contact-details {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #ffffff;
+            padding: 12px 22px;
+            border-radius: 30px;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-sm);
+            color: var(--primary);
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.25s ease;
+        }
+
+        .contact-pill:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--primary);
+        }
+
+        /* Footer */
+        footer {
+            background: #ffffff;
+            border-top: 1px solid var(--border);
+            padding: 30px 20px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .footer-links {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Floating Back to top */
+        .back-to-top {
+            position: fixed;
+            bottom: 25px;
+            left: 25px;
+            background: var(--primary);
+            color: #ffffff;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: var(--shadow-lg);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 99;
+        }
+
+        html[dir="ltr"] .back-to-top {
+            left: auto;
+            right: 25px;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--primary-dark);
+            transform: scale(1.05);
+        }
+
+        /* Language Toggle Content Display */
+        .content-en {
+            display: none;
+        }
+
+        html[lang="en"] .content-ar {
+            display: none;
+        }
+
+        html[lang="en"] .content-en {
+            display: block;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                padding: 35px 15px 30px;
+            }
+            h1.title {
+                font-size: 1.7rem;
+            }
+            .policy-card {
+                padding: 22px 18px;
+            }
+            .section-title {
+                font-size: 1.18rem;
+            }
+            .container {
+                margin-top: -15px;
+                padding: 0 15px;
+            }
+            .contact-details {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .contact-pill {
+                justify-content: center;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="top">
+        <div class="header-container">
+            <div class="lang-switch-wrapper">
+                <button class="lang-btn" id="langToggleBtn" onclick="toggleLanguage()">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                    <span id="langBtnText">English</span>
+                </button>
+            </div>
+
+            <div class="app-icon">
+                <!-- Academic Graduation / Grant Icon -->
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18C5 19.94 8.13 22 12 22C15.87 22 19 19.94 19 17.18V13.18L12 17.07L5 13.18Z"/>
+                </svg>
+            </div>
+
+            <!-- Arabic Header -->
+            <div class="content-ar">
+                <div class="app-badge">تطبيق منحتي للأجهزة الذكية (iOS & Android)</div>
+                <h1 class="title">وثيقة سياسة الخصوصية</h1>
+                <p class="subtitle">نحن نلتزم بحماية خصوصية بياناتك ومعلوماتك الأكاديمية والشخصية وفق أعلى معايير الأمان ومتطلبات متجر تطبيقات أبل (App Store) ومتجر جوجل بلاي (Google Play)</p>
+                <div class="meta-bar">
+                    <span class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        تاريخ التحديث: 11 نوفمبر 2026
+                    </span>
+                    <span class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        معتمد لـ App Store & Google Play
+                    </span>
+                    <span class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                        iOS: com.alkhulaqi.menhatyapp
+                    </span>
+                    <span class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                        Android: com.alkhulaqi.bakodh.menhaty_app
+                    </span>
+                </div>
+            </div>
+
+            <!-- English Header -->
+            <div class="content-en">
+                <div class="app-badge">Menhaty Mobile Application (iOS & Android)</div>
+                <h1 class="title">Privacy Policy</h1>
+                <p class="subtitle">We are committed to protecting your privacy and personal data in strict compliance with Apple App Store Review Guidelines and Google Play Developer Policies.</p>
+                <div class="meta-bar">
+                    <span class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        Last Updated: November 11, 2026
+                    </span>
+                    <span class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        App Store & Google Play Ready
+                    </span>
+                    <span class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                        iOS: com.alkhulaqi.menhatyapp
+                    </span>
+                    <span class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                        Android: com.alkhulaqi.bakodh.menhaty_app
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- ======================= ARABIC VERSION ======================= -->
+        <div class="content-ar">
+
+            <!-- Summary Callout -->
+            <div class="callout-box">
+                <div class="callout-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                    </svg>
+                </div>
+                <div class="callout-content">
+                    <h3>نبذة سريعة وموجزة للمستخدم</h3>
+                    <p>
+                        يهدف تطبيق <strong>"منحتي"</strong> إلى إدارة ومتابعة المنح الدراسية والخدمات الأكاديمية والمالية للطلاب. لا نقوم إطلاقاً ببيع بياناتك الشخصية لأي طرف ثالث، وتُستخدم بياناتك فقط لتوفير خدمات المنحة، وتحديث الطلبات الأكاديمية والمالية، وإرسال الإشعارات الضرورية. كما نمنحك الحق الكامل بحذف حسابك وبياناتك في أي وقت مباشرة من التطبيق.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Table of Contents -->
+            <nav class="toc-card" aria-label="فهرس السياسة">
+                <div class="toc-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="8" y1="6" x2="21" y2="6"></line>
+                        <line x1="8" y1="12" x2="21" y2="12"></line>
+                        <line x1="8" y1="18" x2="21" y2="18"></line>
+                        <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                        <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                        <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                    </svg>
+                    فهرس سياسة الخصوصية
+                </div>
+                <div class="toc-list">
+                    <a href="#ar-sec-1"><span class="toc-number">1</span> المقدمة ونطاق التطبيق</a>
+                    <a href="#ar-sec-2"><span class="toc-number">2</span> البيانات والمعلومات التي نجمعها</a>
+                    <a href="#ar-sec-3"><span class="toc-number">3</span> كيفية استخدام البيانات</a>
+                    <a href="#ar-sec-4"><span class="toc-number">4</span> أذونات الجهاز (نظامي iOS و Android)</a>
+                    <a href="#ar-sec-5"><span class="toc-number">5</span> مزودو الخدمات والأطراف الثالثة (Firebase)</a>
+                    <a href="#ar-sec-6"><span class="toc-number">6</span> حذف الحساب والبيانات (App Store & Google Play)</a>
+                    <a href="#ar-sec-7"><span class="toc-number">7</span> أمن وحماية البيانات</a>
+                    <a href="#ar-sec-8"><span class="toc-number">8</span> خصوصية الأطفال والقصّر</a>
+                    <a href="#ar-sec-9"><span class="toc-number">9</span> حقوق المستخدم والتحكم بالبيانات</a>
+                    <a href="#ar-sec-10"><span class="toc-number">10</span> التحديثات والتواصل معنا</a>
+                </div>
+            </nav>
+
+            <!-- 1. Introduction -->
+            <article class="policy-card" id="ar-sec-1">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    </div>
+                    <h2 class="section-title">1. المقدمة ونطاق التطبيق</h2>
+                </div>
+                <div class="section-body">
+                    <p>
+                        أهلاً بك في تطبيق <strong>منحتي (Menhaty)</strong>. تُبين وثيقة سياسة الخصوصية هذه كيفية جمع واستخدام وتخزين وحماية بياناتك ومعلوماتك الشخصية عند تحميلك أو استخدامك لتطبيق الهاتف المحمول والخدمات المرتبطة به.
+                    </p>
+                    <p>
+                        باستخدامك لتطبيق منحتي، فإنك توافق على الممارسات الموضحة في هذه الوثيقة. إذا كنت لا توافق على هذه السياسة، يرجى الامتناع عن استخدام التطبيق أو حذف حسابك عبر الخيارات المتاحة داخل التطبيق.
+                    </p>
+                </div>
+            </article>
+
+            <!-- 2. Data We Collect -->
+            <article class="policy-card" id="ar-sec-2">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    </div>
+                    <h2 class="section-title">2. البيانات والمعلومات التي نجمعها</h2>
+                </div>
+                <div class="section-body">
+                    <p>نجمع فقط البيانات الضرورية لتمكينك من الاستفادة من المنحة الدراسية وإدارة سجلك الطلابي والمالي:</p>
+                    <ul class="policy-list">
+                        <li><strong>بيانات الحساب الشخصية:</strong> مثل الاسم الكامل، وعنوان البريد الإلكتروني، ورقم الهاتف، واسم المستخدم، وكلمة المرور المشفرة.</li>
+                        <li><strong>البيانات الأكاديمية:</strong> اسم الجامعة، الكلية، التخصص الأكاديمي، المستوى الدراسي، المعدل التراكمي (GPA)، والشهادات والوثائق الأكاديمية.</li>
+                        <li><strong>البيانات والطلبات المالية:</strong> طلبات المخصصات الشهرية، رسوم الدراسة، إعانات السكن، وفواتير التخرج والأنشطة الطلابية.</li>
+                        <li><strong>الملفات والمستندات المرفوعة:</strong> المستندات الثبوتية، صور الإيصالات أو الشهادات الأكاديمية، والصورة الشخصية للملف الشخصي التي يختار المستخدم رفعها طواعية.</li>
+                        <li><strong>بيانات تقنية وتشخيصية:</strong> رمز التنبيهات (FCM Push Token)، نوع نظام التشغيل (iOS/Android)، إصدار التطبيق، وسجلات الأخطاء البرمجية بهدف تصحيح المشاكل الفنية.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- 3. How We Use Information -->
+            <article class="policy-card" id="ar-sec-3">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                    </div>
+                    <h2 class="section-title">3. كيفية استخدام البيانات</h2>
+                </div>
+                <div class="section-body">
+                    <p>نستخدم البيانات التي نجمعها حصرياً للأغراض التشغيلية والأكاديمية التالية:</p>
+                    <ul class="policy-list">
+                        <li>التحقق من هوية الطالب وأحقيته في الاستفادة من المنحة المعتمدة.</li>
+                        <li>معالجة ومتابعة طلبات المخصصات والرسوم الدراسية والموافقات السكنية.</li>
+                        <li>إرسال الإشعارات والتنبيهات الفورية بخصوص حالة الطلبات (قبول، رفض، ملاحظات، أو صرف مستحقات).</li>
+                        <li>تسهيل التواصل المباشر بين الطالب وإدارة المنحة لمتابعة المعاملات.</li>
+                        <li>الحفاظ على أمن الحساب ومكافحة الانتحال أو محاولات الدخول غير المصرح بها.</li>
+                        <li><strong>تأكيد صريح:</strong> لا نقوم ببيع أو تأجير أو مشاركة بياناتك الشخصية مع أي وكالات إعلانية أو أطراف تسويقية لأي غرض ربحي.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- 4. Device Permissions -->
+            <article class="policy-card" id="ar-sec-4">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                    </div>
+                    <h2 class="section-title">4. أذونات الجهاز (نظامي iOS و Android)</h2>
+                </div>
+                <div class="section-body">
+                    <p>
+                        وفقاً لإرشادات شركتي أبل (Apple App Store Guidelines) وجوجل (Google Play Developer Policies)، يطلب التطبيق أذونات واضحة ومحددة فقط عند الحاجة الفعلية لتنفيذ إجراء يقوم به المستخدم:
+                    </p>
+
+                    <div class="perm-grid">
+                        <div class="perm-item">
+                            <span class="perm-name">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                                الكاميرا (Camera)
+                            </span>
+                            <span class="perm-desc">
+                                <strong>iOS:</strong> <code>NSCameraUsageDescription</code> | <strong>Android:</strong> <code>android.permission.CAMERA</code>
+                                <br>
+                                تُستخدم فقط عندما يقرر المستخدم التقاط صورة مباشرة لمستند أكاديمي، أو إيصال رسمي، أو صورة شخصية للملف.
+                            </span>
+                        </div>
+
+                        <div class="perm-item">
+                            <span class="perm-name">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                                مكتبة الصور والملفات (Photos & Storage)
+                            </span>
+                            <span class="perm-desc">
+                                <strong>iOS:</strong> <code>NSPhotoLibraryUsageDescription</code> | <strong>Android:</strong> <code>READ_MEDIA_IMAGES / READ_EXTERNAL_STORAGE</code>
+                                <br>
+                                تُستخدم لاختيار المستندات بصيغة PDF أو الصور المخزنة في جهازك لرفعها إلى طلبات المنحة والمطالبات الأكاديمية.
+                            </span>
+                        </div>
+
+                        <div class="perm-item">
+                            <span class="perm-name">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                                الإشعارات (Push Notifications)
+                            </span>
+                            <span class="perm-desc">
+                                <strong>iOS:</strong> <code>remote-notification</code> | <strong>Android:</strong> <code>POST_NOTIFICATIONS</code>
+                                <br>
+                                تُستخدم لتنبيهك فور صدور أي قرار بخصوص طلباتك الأكاديمية أو المالية، أو وصول رسائل جديدة من المشرفين.
+                            </span>
+                        </div>
+                    </div>
+
+                    <p style="margin-top: 15px; font-size: 0.9rem;">
+                        <em>ملاحظة: يمكنك تعطيل أو تغيير هذه الأذونات في أي وقت من خلال إعدادات جهازك في قسم التطبيقات (Settings -> Menhaty).</em>
+                    </p>
+                </div>
+            </article>
+
+            <!-- 5. Third Party Services -->
+            <article class="policy-card" id="ar-sec-5">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                    </div>
+                    <h2 class="section-title">5. مزودو الخدمات والأطراف الثالثة</h2>
+                </div>
+                <div class="section-body">
+                    <p>
+                        نحن نستعين بعدد محدود جداً من خدمات البنية التحتية الموثوقة عالمياً لتشغيل التطبيق بكفاءة:
+                    </p>
+                    <ul class="policy-list">
+                        <li><strong>Firebase Cloud Messaging (Google LLC):</strong> لإرسال الإشعارات اللحظية للتطبيق عند وجود تحديث على حسابك. لا يتم تزويد Google ببيانات شخصية، بل برمز إشعارات عشوائي مجهول الهوية خاص بجهازك.</li>
+                        <li><strong>الخوادم السحابية الآمنة:</strong> خوادم مشفرة تخضع لمعايير الحماية الصارمة وبروتوكول SSL/TLS لحفظ قواعد البيانات ومعالجة طلبات الطلاب بأمان.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- 6. Account & Data Deletion (Apple Requirement 5.1.1(v) & Google Play Policy) -->
+            <article class="policy-card" id="ar-sec-6">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                    </div>
+                    <h2 class="section-title">6. حذف الحساب والبيانات (متطلبات متجر أبل App Store ومتجر Google Play)</h2>
+                </div>
+                <div class="section-body">
+                    <p>
+                        وفقاً لإرشادات أبل الصارمة (Apple Guideline 5.1.1(v)) وسياسة بيانات المستخدم في متجر جوجل بلاي (Google Play Data Safety & Account Deletion Policy)، يضمن تطبيق "منحتي" لك الحق الكامل في حذف حسابك وبياناتك الشخصية المرتبطة به في أي وقت وبكل سهولة سواء من داخل التطبيق أو عبر الويب والبريد الإلكتروني.
+                    </p>
+
+                    <div class="highlight-box">
+                        <div class="highlight-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            طريقة حذف الحساب مباشرة من داخل التطبيق:
+                        </div>
+                        <ol style="margin-right: 20px; line-height: 1.8; color: var(--text-main);">
+                            <li>افتح تطبيق <strong>منحتي</strong> وسجل دخولك إلى حسابك.</li>
+                            <li>انتقل إلى شاشة <strong>الإعدادات (Settings)</strong> من القائمة.</li>
+                            <li>اضغط على خيار <strong>"حذف الحساب" (Delete Account)</strong>.</li>
+                            <li>ستظهر لك رسالة تأكيد، اضغط على <strong>"تأكيد الطلب"</strong>.</li>
+                            <li>سيتم تسجيل خروجك فوراً وتوجيه الطلب للإدارة لإتمام عملية المسح النهائي للبيانات.</li>
+                        </ol>
+                    </div>
+
+                    <div class="highlight-box blue">
+                        <div class="highlight-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            طلب الحذف عبر البريد الإلكتروني (مطلب جوجل بلاي وأبل للويب):
+                        </div>
+                        <p style="margin-top: 6px; font-size: 0.95rem;">
+                            إذا قمت بإلغاء تثبيت التطبيق أو لم تتمكن من تسجيل الدخول، يمكنك إرسال طلب حذف الحساب مباشرة من بريدك الإلكتروني المسجل لدينا إلى:
+                            <br>
+                            <strong>support@menhaty.com</strong> مع كتابة الموضوع <em>"طلب حذف حساب - تطبيق منحتي"</em>. سيتم التحقق من ملكيتك للحساب وتنفيذ طلب الحذف ومسح بياناتك خلال مهلة لا تتجاوز 7 أيام عمل.
+                        </p>
+                    </div>
+
+                    <p style="margin-top: 14px; font-size: 0.92rem;">
+                        <strong>ما الذي يحدث عند الحذف؟</strong> يتم إلغاء تنشيط حسابك وحذف تفاصيل تسجيل الدخول، الصورة الشخصية، وأي رموز إشعارات مرتبطة بجهازك. قد نحتفظ فقط بسجلات العمليات المالية الرسمية والمؤرشفة لمدد محددة إذا كان ذلك مفروضاً بموجب الالتزامات القانونية أو المحاسبية للأوقاف والمؤسسات المانحة.
+                    </p>
+                </div>
+            </article>
+
+            <!-- 7. Security -->
+            <article class="policy-card" id="ar-sec-7">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                    </div>
+                    <h2 class="section-title">7. أمن وحماية البيانات</h2>
+                </div>
+                <div class="section-body">
+                    <p>
+                        نحن نولي أمان بياناتك أهمية قصوى ونطبق أفضل الممارسات التقنية والتنظيمية لحمايتها، بما في ذلك:
+                    </p>
+                    <ul class="policy-list">
+                        <li><strong>التشفير أثناء النقل:</strong> يتم تشفير جميع الاتصالات بين التطبيق والخوادم باستخدام أحدث بروتوكولات التشفير (HTTPS / SSL / TLS).</li>
+                        <li><strong>التخزين المشفر على الجهاز:</strong> نستخدم تقنيات التخزين المشفر والآمن (Secure Keychain / Secure Storage) لحفظ الرموز التعريفية دون حفظ كلمات المرور بنص صريح.</li>
+                        <li><strong>صلاحيات وصول مقيدة:</strong> لا يُسمح بالاطلاع على ملف الطالب إلا للمشرفين الأكاديميين والإداريين المعتمدين والمخولين رسمياً بمتابعة المنحة.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- 8. Children Privacy -->
+            <article class="policy-card" id="ar-sec-8">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+                    </div>
+                    <h2 class="section-title">8. خصوصية الأطفال والقصّر</h2>
+                </div>
+                <div class="section-body">
+                    <p>
+                        خدمات تطبيق منحتي موجهة إلى طلاب المراحل الجامعية والمعاهد والمستفيدين البالغين المؤهلين للحصول على المنح. نحن لا نجمع عن قصد أي بيانات شخصية من الأطفال دون سن 13 عاماً (أو السن القانوني في دولتك). إذا علمنا بجمع بيانات تخص طفلاً دون موافقة ولي الأمر الرسمية، فإننا نقوم بحذف تلك البيانات فوراً.
+                    </p>
+                </div>
+            </article>
+
+            <!-- 9. User Rights -->
+            <article class="policy-card" id="ar-sec-9">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <h2 class="section-title">9. حقوق المستخدم</h2>
+                </div>
+                <div class="section-body">
+                    <p>لديك حقوق كاملة فيما يتعلق ببياناتك الشخصية، وتشمل:</p>
+                    <ul class="policy-list">
+                        <li><strong>حق الوصول:</strong> يمكنك الاطلاع على بياناتك المسجلة وملفك الأكاديمي عبر التطبيق في أي وقت.</li>
+                        <li><strong>حق التصحيح والتحديث:</strong> يمكنك تحديث معلوماتك أو تقديم طلب تعديل بياناتك الأكاديمية عبر شاشات التطبيق المخصصة.</li>
+                        <li><strong>حق الحذف:</strong> طلب الإلغاء والحذف الكامل لحسابك وبياناتك كما هو موضح بالقسم رقم 6.</li>
+                        <li><strong>إلغاء الاشتراك في الإشعارات:</strong> يمكنك إيقاف الإشعارات في أي وقت عبر إعدادات جهازك.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- 10. Changes and Contact -->
+            <article class="policy-card" id="ar-sec-10">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    </div>
+                    <h2 class="section-title">10. التعديلات على السياسة ومعلومات التواصل</h2>
+                </div>
+                <div class="section-body">
+                    <p>
+                        قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر لمواكبة التحديثات التقنية أو التنظيمية. سنقوم بإشعار المستخدمين بأي تغييرات جوهرية عن طريق التطبيق أو تحديث تاريخ "آخر تحديث" أعلى هذه الصفحة.
+                    </p>
+
+                    <div class="contact-card">
+                        <h3>هل لديك أي استفسار حول سياسة الخصوصية؟</h3>
+                        <p>فريق الدعم الفني وإدارة تطبيق منحتي جاهز للإجابة على جميع تساؤلاتك ومساعدتك:</p>
+                        <div class="contact-details">
+                            <a href="mailto:support@menhaty.com" class="contact-pill">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                support@menhaty.com
+                            </a>
+                            <a href="tel:+967778444227" class="contact-pill" style="color: var(--accent-blue);" title="انقر للاتصال المباشر بفريق الدعم">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                <span>فريق الدعم: <bdi dir="ltr">+967 778 444 227</bdi></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- ======================= ENGLISH VERSION ======================= -->
+        <div class="content-en">
+
+            <!-- Summary Callout -->
+            <div class="callout-box">
+                <div class="callout-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                    </svg>
+                </div>
+                <div class="callout-content">
+                    <h3>Summary for Users & App Store Reviewers</h3>
+                    <p>
+                        The <strong>"Menhaty"</strong> application is a student scholarship and academic allowance management platform. We never sell your personal information. Data is exclusively collected to administer scholarship benefits, manage academic files, disburse study allowances, and deliver vital updates. Users maintain the absolute right to delete their account and personal data at any time directly in-app or via email.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Table of Contents -->
+            <nav class="toc-card" aria-label="Table of Contents">
+                <div class="toc-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="8" y1="6" x2="21" y2="6"></line>
+                        <line x1="8" y1="12" x2="21" y2="12"></line>
+                        <line x1="8" y1="18" x2="21" y2="18"></line>
+                        <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                        <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                        <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                    </svg>
+                    Table of Contents
+                </div>
+                <div class="toc-list">
+                    <a href="#en-sec-1"><span class="toc-number">1</span> Introduction & Scope</a>
+                    <a href="#en-sec-2"><span class="toc-number">2</span> Information We Collect</a>
+                    <a href="#en-sec-3"><span class="toc-number">3</span> How We Use Your Data</a>
+                    <a href="#en-sec-4"><span class="toc-number">4</span> Device Permissions (iOS & Android)</a>
+                    <a href="#en-sec-5"><span class="toc-number">5</span> Third-Party Service Providers (Firebase)</a>
+                    <a href="#en-sec-6"><span class="toc-number">6</span> Account & Data Deletion (App Store & Google Play)</a>
+                    <a href="#en-sec-7"><span class="toc-number">7</span> Data Security & Encryption</a>
+                    <a href="#en-sec-8"><span class="toc-number">8</span> Children's Privacy</a>
+                    <a href="#en-sec-9"><span class="toc-number">9</span> Your Privacy Rights</a>
+                    <a href="#en-sec-10"><span class="toc-number">10</span> Policy Updates & Contact Us</a>
+                </div>
+            </nav>
+
+            <!-- 1. Introduction -->
+            <article class="policy-card" id="en-sec-1">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    </div>
+                    <h2 class="section-title">1. Introduction & Scope</h2>
+                </div>
+                <div class="section-body">
+                    <p>
+                        Welcome to <strong>Menhaty ("منحتي")</strong>. This Privacy Policy describes how Menhaty collects, uses, protects, and discloses personal information through our mobile application for iOS and Android, as well as related scholarship management services.
+                    </p>
+                    <p>
+                        By accessing or using the Menhaty application, you acknowledge and agree to the practices described in this Privacy Policy. If you do not agree with this policy, please discontinue using the application or request account deletion as outlined below.
+                    </p>
+                </div>
+            </article>
+
+            <!-- 2. Data We Collect -->
+            <article class="policy-card" id="en-sec-2">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    </div>
+                    <h2 class="section-title">2. Information We Collect</h2>
+                </div>
+                <div class="section-body">
+                    <p>We only collect information necessary to deliver educational grant and scholarship services:</p>
+                    <ul class="policy-list">
+                        <li><strong>Personal Identification Data:</strong> Full name, verified email address, phone number, username, and encrypted credentials.</li>
+                        <li><strong>Academic Records:</strong> Educational institution, faculty, major, academic level/year, Grade Point Average (GPA), academic transcripts, and official verification certificates.</li>
+                        <li><strong>Grant & Financial Request Data:</strong> Monthly stipend applications, tuition fee payment requests, housing/dormitory allowances, and graduation expense records.</li>
+                        <li><strong>Uploaded Files & Media:</strong> User-selected images and documents (such as PDF files and JPEG/PNG receipts or certificates) that the user intentionally uploads for grant qualification.</li>
+                        <li><strong>Technical & Diagnostics Information:</strong> Firebase Cloud Messaging (FCM) push token, mobile operating system version (iOS/Android), application version, and anonymized diagnostic crash logs.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- 3. How We Use Your Data -->
+            <article class="policy-card" id="en-sec-3">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                    </div>
+                    <h2 class="section-title">3. How We Use Your Data</h2>
+                </div>
+                <div class="section-body">
+                    <p>We process collected data exclusively for lawful academic and grant management purposes:</p>
+                    <ul class="policy-list">
+                        <li>To authenticate student identity and confirm active scholarship eligibility.</li>
+                        <li>To review, process, and approve financial requests, tuition allowances, and hostel applications.</li>
+                        <li>To deliver essential push notifications regarding application decisions, allowance approvals, or admin notices.</li>
+                        <li>To enable direct official communication between students and scholarship supervisors.</li>
+                        <li>To protect account integrity, prevent unauthorized access, and troubleshoot application performance.</li>
+                        <li><strong>Explicit Commitment:</strong> We do not sell, rent, license, or monetize your personal data to third parties, advertisers, or data brokers.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- 4. Device Permissions (iOS & Android) -->
+            <article class="policy-card" id="en-sec-4">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                    </div>
+                    <h2 class="section-title">4. Device Permissions (iOS & Android)</h2>
+                </div>
+                <div class="section-body">
+                    <p>
+                        In accordance with Apple App Store Review Guidelines and Google Play Developer Policies, the Menhaty app requests access to device capabilities only when strictly necessary for user-initiated actions:
+                    </p>
+
+                    <div class="perm-grid">
+                        <div class="perm-item">
+                            <span class="perm-name">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                                Camera
+                            </span>
+                            <span class="perm-desc">
+                                <strong>iOS:</strong> <code>NSCameraUsageDescription</code> | <strong>Android:</strong> <code>android.permission.CAMERA</code>
+                                <br>
+                                Used solely when you choose to capture a live photo of an academic document, tuition invoice, or profile picture directly within the app.
+                            </span>
+                        </div>
+
+                        <div class="perm-item">
+                            <span class="perm-name">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                                Photos & Storage
+                            </span>
+                            <span class="perm-desc">
+                                <strong>iOS:</strong> <code>NSPhotoLibraryUsageDescription</code> | <strong>Android:</strong> <code>READ_MEDIA_IMAGES / READ_EXTERNAL_STORAGE</code>
+                                <br>
+                                Allows you to select and attach stored certificates, PDFs, or photos to your scholarship profile and financial grant requests.
+                            </span>
+                        </div>
+
+                        <div class="perm-item">
+                            <span class="perm-name">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                                Push Notifications
+                            </span>
+                            <span class="perm-desc">
+                                <strong>iOS:</strong> <code>remote-notification</code> | <strong>Android:</strong> <code>POST_NOTIFICATIONS</code>
+                                <br>
+                                Delivers timely alerts about scholarship decisions, payment transfers, message replies, and system announcements.
+                            </span>
+                        </div>
+                    </div>
+
+                    <p style="margin-top: 15px; font-size: 0.9rem;">
+                        <em>Note: You can review and adjust these permissions anytime in your device settings under Settings &gt; Apps &gt; Menhaty.</em>
+                    </p>
+                </div>
+            </article>
+
+            <!-- 5. Third Party -->
+            <article class="policy-card" id="en-sec-5">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                    </div>
+                    <h2 class="section-title">5. Third-Party Service Providers</h2>
+                </div>
+                <div class="section-body">
+                    <p>
+                        We utilize industry-leading, privacy-compliant cloud services to ensure reliable app operation:
+                    </p>
+                    <ul class="policy-list">
+                        <li><strong>Firebase Cloud Messaging (Google LLC):</strong> Enables immediate push notification delivery. No personal user credentials are shared with Google—only an ephemeral, randomized device token.</li>
+                        <li><strong>Secure Cloud Infrastructure:</strong> Cloud servers compliant with TLS 1.2+ encryption for secure backend storage and API processing.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- 6. Account & Data Deletion (Apple Guideline 5.1.1(v) & Google Play Policy) -->
+            <article class="policy-card" id="en-sec-6">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                    </div>
+                    <h2 class="section-title">6. Account & Data Deletion (App Store & Google Play Policy)</h2>
+                </div>
+                <div class="section-body">
+                    <p>
+                        In full adherence to Apple App Store Review Guideline 5.1.1(v) and Google Play's User Data &amp; Account Deletion policies, Menhaty provides straightforward mechanisms for users to delete their account and personal data both in-app and via web/email.
+                    </p>
+
+                    <div class="highlight-box">
+                        <div class="highlight-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            How to Delete Your Account In-App:
+                        </div>
+                        <ol style="margin-left: 20px; line-height: 1.8; color: var(--text-main);">
+                            <li>Open the <strong>Menhaty</strong> application and sign in.</li>
+                            <li>Navigate to <strong>Settings</strong> from the menu.</li>
+                            <li>Tap on <strong>"Delete Account"</strong> (حذف الحساب).</li>
+                            <li>Read the confirmation notice and tap <strong>"Confirm"</strong>.</li>
+                            <li>You will be immediately logged out, and your deletion request will be submitted to the administration for permanent execution.</li>
+                        </ol>
+                    </div>
+
+                    <div class="highlight-box blue">
+                        <div class="highlight-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            Requesting Deletion via Email (Web-based path for Google Play & Apple):
+                        </div>
+                        <p style="margin-top: 6px; font-size: 0.95rem;">
+                            If you have uninstalled the app or cannot sign in, you can request full account and data deletion by sending an email from your registered address to:
+                            <br>
+                            <strong>support@menhaty.com</strong> with the subject line <em>"Account Deletion Request - Menhaty"</em>. Upon verification, your account and associated personal data will be completely deleted within 7 business days.
+                        </p>
+                    </div>
+
+                    <p style="margin-top: 14px; font-size: 0.92rem;">
+                        <strong>Data Retention Consequences:</strong> Upon account deletion, personal credentials, device tokens, and profile media are permanently erased or anonymized. Historical financial and disbursement audit logs may be retained solely to the extent mandated by applicable legal, fiscal, or endowment auditing regulations.
+                    </p>
+                </div>
+            </article>
+
+            <!-- 7. Security -->
+            <article class="policy-card" id="en-sec-7">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                    </div>
+                    <h2 class="section-title">7. Data Security & Encryption</h2>
+                </div>
+                <div class="section-body">
+                    <p>
+                        We employ rigorous technical and organizational security controls to protect student data against unauthorized access, alteration, or disclosure:
+                    </p>
+                    <ul class="policy-list">
+                        <li><strong>End-to-End Transport Encryption:</strong> All data transmitted between the client mobile application and our servers is secured with HTTPS/TLS encryption.</li>
+                        <li><strong>Secure On-Device Storage:</strong> Auth tokens are stored in the iOS Keychain via secure storage libraries; sensitive credentials are never stored in plain text.</li>
+                        <li><strong>Role-Based Access Control:</strong> Student academic files are strictly restricted to authorized scholarship coordinators and program administrators.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- 8. Children -->
+            <article class="policy-card" id="en-sec-8">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+                    </div>
+                    <h2 class="section-title">8. Children's Privacy</h2>
+                </div>
+                <div class="section-body">
+                    <p>
+                        Menhaty is intended for university students, higher education scholars, and authorized legal beneficiaries. We do not knowingly solicit or collect personally identifiable information from children under 13 (or under 16 where required by local law). If we discover that personal data of a minor has been gathered without parental consent, we will promptly delete it.
+                    </p>
+                </div>
+            </article>
+
+            <!-- 9. Rights -->
+            <article class="policy-card" id="en-sec-9">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <h2 class="section-title">9. Your Privacy Rights</h2>
+                </div>
+                <div class="section-body">
+                    <p>You maintain full control over your personal data:</p>
+                    <ul class="policy-list">
+                        <li><strong>Right to Access:</strong> View all your active profile data and academic records directly inside the app.</li>
+                        <li><strong>Right to Rectification:</strong> Request corrections or updates to your academic information through dedicated screens.</li>
+                        <li><strong>Right to Erasure:</strong> Delete your account and associated records as detailed in Section 6.</li>
+                        <li><strong>Opt-Out of Notifications:</strong> Toggle off push alerts at any time through system settings.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- 10. Contact -->
+            <article class="policy-card" id="en-sec-10">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    </div>
+                    <h2 class="section-title">10. Policy Updates & Contact Information</h2>
+                </div>
+                <div class="section-body">
+                    <p>
+                        We may update this Privacy Policy periodically. Significant changes will be announced in-app or posted directly to this URL with a revised effective date.
+                    </p>
+
+                    <div class="contact-card">
+                        <h3>Questions Regarding This Policy?</h3>
+                        <p>Our dedicated support and scholarship administration team is available to assist you:</p>
+                        <div class="contact-details">
+                            <a href="mailto:support@menhaty.com" class="contact-pill">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                support@menhaty.com
+                            </a>
+                            <a href="tel:+967778444227" class="contact-pill" style="color: var(--accent-blue);" title="Click to call Support Team">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                <span>Support: +967 778 444 227</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="content-ar">
+            <p>© 2026 تطبيق منحتي (Menhaty App). جميع الحقوق محفوظة.</p>
+            <p style="margin-top: 6px; font-size: 0.8rem; opacity: 0.75;">
+                تطبيق منحتي مخصص لإدارة المنح الدراسية والخدمات الأكاديمية والمالية للطلاب.
+            </p>
+            <div class="footer-links">
+                <a href="#top">العودة للأعلى ↑</a>
+                <span>•</span>
+                <a href="mailto:support@menhaty.com">support@menhaty.com</a>
+                <span>•</span>
+                <a href="tel:+967778444227"><bdi dir="ltr">+967 778 444 227</bdi></a>
+            </div>
+        </div>
+
+        <div class="content-en">
+            <p>© 2026 Menhaty App. All Rights Reserved.</p>
+            <p style="margin-top: 6px; font-size: 0.8rem; opacity: 0.75;">
+                Menhaty application is dedicated to managing student scholarships, academic records, and financial benefits.
+            </p>
+            <div class="footer-links">
+                <a href="#top">Back to top ↑</a>
+                <span>•</span>
+                <a href="mailto:support@menhaty.com">support@menhaty.com</a>
+                <span>•</span>
+                <a href="tel:+967778444227">+967 778 444 227</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </a>
+
+    <!-- Script for language toggle and back-to-top -->
+    <script>
+        let currentLang = 'ar';
+
+        function toggleLanguage() {
+            const htmlTag = document.documentElement;
+            const btnText = document.getElementById('langBtnText');
+            
+            if (currentLang === 'ar') {
+                currentLang = 'en';
+                htmlTag.setAttribute('lang', 'en');
+                htmlTag.setAttribute('dir', 'ltr');
+                btnText.textContent = 'العربية';
+                document.title = 'Privacy Policy | Menhaty App (iOS & Android)';
+            } else {
+                currentLang = 'ar';
+                htmlTag.setAttribute('lang', 'ar');
+                htmlTag.setAttribute('dir', 'rtl');
+                btnText.textContent = 'English';
+                document.title = 'سياسة الخصوصية | تطبيق منحتي - Menhaty Privacy Policy (iOS & Android)';
+            }
+        }
+
+        // Back to top visibility listener
+        const backToTopBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>
